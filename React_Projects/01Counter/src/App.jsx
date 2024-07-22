@@ -23,7 +23,6 @@ function App() {
    
   
   //Remove Value on click
-
   const removeValue = () => {
     counter = counter - 1
     
