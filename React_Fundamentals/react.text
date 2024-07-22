@@ -1,0 +1,21 @@
+--React is Library
+
+
+--Google it 
+-babel , fiber, Virtual DOM
+-Diff algo and Hydrenation 
+
+
+
+--Topic to learn in React JS
+- Core of rect JS (State , DOM Manipulation , JSX)
+- Compoment Reuse
+- Resuing of Compoment (Props)
+- How to propogate Change (Hooks)
+
+
+-- Additional  addon  to React
+- Router (React dont have Router)
+- State Management (React dont have State Management ,, Redux, Toolkit, contextAPI)
+- class Based Compoment
+- Best Backend as a Service  (BAAS)
