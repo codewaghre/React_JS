@@ -1,7 +1,9 @@
 
 
-function Card(props) { // "vistin me " pop up  when value is not set
-    // console.log(props.username);
+
+
+function Card({name , btnText}) { // "vistin me " pop up  when value is not set
+
   return (
     <div className="relative h-[400px] w-[300px] rounded-md">
       <img
@@ -11,12 +13,12 @@ function Card(props) { // "vistin me " pop up  when value is not set
       />
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
       <div className="absolute bottom-4 left-4 text-left">
-              <h1 className="text-lg font-semibold text-white">{props.username}</h1>
+              <h1 className="text-lg font-semibold text-white"> {name} </h1>
         <p className="mt-2 text-sm text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
         </p>
         <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-          {props.btnText  ||  "Visit Me"} &rarr; 
+          {btnText  ||  "Visit Me"} &rarr; 
         </button>
       </div>
     </div>
