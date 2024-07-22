@@ -1,12 +1,14 @@
---React is Library
+--- refer this artical on github to Understand behind the scence of the react js
+<https://github.com/acdlite/react-fiber-architecture>
 
+--React is Library
 
 --Google it 
 -babel , fiber, Virtual DOM
 -Diff algo and Hydrenation 
 
 
-
+// Roadmap
 --Topic to learn in React JS
 - Core of rect JS (State , DOM Manipulation , JSX)
 - Compoment Reuse
@@ -19,3 +21,36 @@
 - State Management (React dont have State Management ,, Redux, Toolkit, contextAPI)
 - class Based Compoment
 - Best Backend as a Service  (BAAS)
+
+
+
+// React Behind the scence
+- React Fiber is core react algorithm (hard to Understand )
+- Fiber Algo is complext algo , used to Manipulation of Dom
+- it help to quick response like amination, layout etc
+
+//headline feature is incremental rendering 
+-- its ability to control the tree 
+-- it contorl the only perticuler part of tree that which part need to be updated , not all tree
+
+// Other key feature called as hydration
+- ability to pause, abort and new update (priority to diff  type of update)
+
+// Reconciliation
+--The algorithm React uses to diff one tree with another to determine which parts need to be changed.
+-- A change in the data used to render a React app using id= root . 
+-- Usually the result of `setState`. 
+-- Eventually results in a re-render.
+
+-----Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM."
+ A high-level description goes something like this: when you render a React application, 
+ a tree of nodes that describes the app is generated and saved in memory. 
+ This tree is then flushed to the rendering environment — for example, 
+ in the case of a browser application, it's translated to a set of DOM operations. 
+ When the app is updated (usually via setState), a new tree is generated. 
+ The new tree is diffed with the previous tree to compute which operations are needed to update the rendered app.
+
+ check the Diff betweenn, one tree (react tree) and second is window DOM tree 
+
+--- refer this artical on github to Understand behind the scence of the react js
+<https://github.com/acdlite/react-fiber-architecture>
