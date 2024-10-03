@@ -16,7 +16,7 @@ export class Akshay extends Component {
     render() {
         return (
             <div>
-                <h1 onMouseOver={this.marksIncrement.bind(this)}> Marks is: {this.state.marks} , {this.props.subName} </h1>
+                <h1 onMouseOver={this.marksIncrement.bind(this)}> Akshay Marks is: {this.state.marks} , {this.props.subName} </h1>
             </div>
         )
     }
