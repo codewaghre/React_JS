@@ -30,7 +30,7 @@ export class LifeCycleA extends Component {
       
     return (
         <div>
-            <LifeCycleB/>
+          <LifeCycleB/>
         helllo life Cycle A
       </div>
     )

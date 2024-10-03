@@ -76,9 +76,11 @@ export class Card extends Component {
   render() {
     return (
       <div>
-            <h1>Count Cart : {this.state.qty} </h1>
+        {/* <h1>Count Cart : {this.state.qty} </h1> */}
+        
+        <h1>Count Cart : {this.state.qty} </h1>
             
-            <button className='button'onClick={this.updateQty} > Add Count  Cart</button>
+        <button className='button'onClick={this.updateQty} > Add Count  Cart</button>
       </div>
     )
   }
