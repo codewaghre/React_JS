@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Fetch from './Component/Fetch';
 import Multiple from './Component/Multiple';
 import Memo from './Component/Memo';
+import UseMemo from './Component/UseMemo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +17,9 @@ root.render(
     {/* <Fetch /> */}
     
     {/* <Multiple /> */}
-    <Memo/>
+    {/* <Memo/> */}
+
+    <UseMemo/>
   </React.StrictMode>
 );
 
