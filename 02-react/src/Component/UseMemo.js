@@ -1,4 +1,4 @@
-import { useCallback,  useState } from "react"
+import { useCallback,  useState, useMemo } from "react"
 import './style.css'
 
 /*eslint no-unused-vars: "error"*/
@@ -19,16 +19,16 @@ function UseMemo() {
     }
 
     //Use Memo result the value
-    // const result = useMemo(function slowME() {
-    //     let sum  = 0
-    //     for (let i = 0; i <= 100000000; i++){
-    //         sum += i
-    //     }
+    const result01 = useMemo(function slowME() {
+        let sum  = 0
+        for (let i = 0; i <= 100000000; i++){
+            sum += i
+        }
 
-    //     console.log("hello im slow function");
-    //     return sum
+        console.log("hello im slow function");
+        return sum
         
-    // }, [])
+    }, [])
     
 
     //let diff between useMemo and useCallBack
@@ -59,8 +59,9 @@ function UseMemo() {
             <br></br>
             <input type="text" value={input} onChange={handleInput}></input>
 
-            <h1> {result()
-            } </h1>
+            <h1> useCallBack return the callback fucntion, open console log {console.log(result)} </h1>
+            <h1> useMeme return the value { result01}</h1>
+            
         </div>
     )
 }
