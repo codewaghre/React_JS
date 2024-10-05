@@ -47,8 +47,6 @@ function UseMemo() {
 
     //Diff is useCallback return the function and useMemo return the value
 
-    
-
     // const result = slowME()
 
     return (
