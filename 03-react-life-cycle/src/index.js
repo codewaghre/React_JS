@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Akshay from './HOC/Akshay';
 import Rohan from './HOC/Rohan';
 import Abhishek from './HOC/Abhishek';
-import Anushka from './HOC/Anushka';
+
 // import ProductUpdate from './classLifeCycle/ProductUpdate';
 // import LifeCycleA from './classLifeCycle/LifeCycleA';
 
@@ -22,7 +22,6 @@ root.render(
     <Akshay />
     <Rohan />
     <Abhishek />
-    {/* <Anushka/> */}
   </React.StrictMode>
 );
 
