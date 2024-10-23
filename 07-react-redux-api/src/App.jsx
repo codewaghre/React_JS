@@ -2,15 +2,20 @@
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
 import {fetchTodos}  from '../src/slice/todoSlice'
+import { useState } from 'react'
 
 
 function App() {
 
   const dispatch = useDispatch()
 
-  function handleClick() {
+  useState(() => {
     dispatch(fetchTodos())
-  }
+  })
+
+  
+  //   dispatch(fetchTodos())
+
   const state = useSelector((state) => state)
   console.log(state);
   
@@ -25,7 +30,7 @@ function App() {
           Fetch Todo
         </h1>
 
-        <button onClick={handleClick}> Fetch API</button>
+        {/* <button onClick={handleClick}> Fetch API</button> */}
         {
           state.todo.data && state.todo.data.map((e) => (<li key={e.id}>{ e.title}</li>) )
         }

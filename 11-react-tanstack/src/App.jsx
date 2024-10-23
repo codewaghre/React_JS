@@ -1,11 +1,11 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import './App.css'
-import InfiniteScroll from "./components/InfiniteScroll";
+// import InfiniteScroll from "./components/InfiniteScroll";
 // import DeleteData from "./components/DeleteData";
 // import TanStack from './components/TanStack'
 // import FetchAxios from "./components/FetchAxios";
-// import FetchPagination from "./components/FetchPagination";
+import FetchPagination from "./components/FetchPagination";
 
 
 
@@ -20,9 +20,9 @@ function App() {
       <QueryClientProvider client={queryClient}>
         {/* <TanStack /> */}
         {/* <FetchAxios/> */}
-        {/* <FetchPagination/> */}
+        <FetchPagination/>
         {/* <DeleteData/> */}
-        <InfiniteScroll/>
+        {/* <InfiniteScroll/> */}
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
 
